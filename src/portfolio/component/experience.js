@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './style.css'
 const Experience = () => {
     const [data, setData] = useState([]);
-    const [api, setApi] = useState('http://localhost:5000/Experience/');
+    const [api, setApi] = useState('https://localhost-000.onrender.com/Experience/');
 
     const fetchData = async () => {
         try {

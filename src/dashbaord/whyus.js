@@ -18,7 +18,7 @@ const App = () => {
         // Fetch data from the server when the component mounts
         async function fetchData() {
             try {
-                const response = await fetch('http://localhost:5000/whyus/kel'); // Replace with your API endpoint
+                const response = await fetch('https://localhost-000.onrender.com/whyus/kel'); // Replace with your API endpoint
                 if (response.ok) {
                     const result = await response.json();
                     if (result.data && result.data.length > 0) {
@@ -48,7 +48,7 @@ const App = () => {
     const handleSaveClick = async () => {
         // Send edited data back to the server when saving
         try {
-            const response = await fetch(`http://localhost:5000/whyus/update/${data._id}`, {
+            const response = await fetch(`https://localhost-000.onrender.com/whyus/update/${data._id}`, {
                 method: 'PUT', // Assuming you use PUT for updates
                 headers: {
                     'Content-Type': 'application/json',
@@ -60,7 +60,7 @@ const App = () => {
                 console.log('Data updated successfully.');
 
                 // Update the document in MongoDB with the same ID
-                const updateResponse = await fetch(`http://localhost:5000/whyus/updateDocument/${data._id}`, {
+                const updateResponse = await fetch(`https://localhost-000.onrender.com/whyus/updateDocument/${data._id}`, {
                     method: 'PUT', // Assuming you use PUT for updates
                     headers: {
                         'Content-Type': 'application/json',
@@ -98,7 +98,7 @@ const App = () => {
         formData.append('file', file);
 
         try {
-            const response = await fetch('http://localhost:8000/upload', {
+            const response = await fetch('https://localhost-000.onrender.com/upload', {
                 method: 'POST',
                 body: formData,
             });

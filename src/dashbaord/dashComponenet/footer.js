@@ -8,7 +8,7 @@ const Footer1 = () => {
 
     useEffect(() => {
         // Fetch data from the API
-        fetch('http://localhost:5000/footer/getfooter')
+        fetch('https://localhost-000.onrender.com/footer/getfooter')
             .then((response) => response.json())
             .then((data) => {
                 // Set the fetched data to the state
@@ -36,7 +36,7 @@ const Footer1 = () => {
         setFooterData([updatedData]);
 
         // Update the database with the edited data
-        fetch(`http://localhost:5000/footer/update/${footerData[0]._id}`, {
+        fetch(`https://localhost-000.onrender.com/footer/update/${footerData[0]._id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',

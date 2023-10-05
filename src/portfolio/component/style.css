@@ -115,6 +115,6 @@
 
 @media (min-width:800px) {
     .item-list {
-        width: 246px;
+        width: 100%;
     }
 }

@@ -7,7 +7,7 @@ function Blogs() {
 
     useEffect(() => {
         // Fetch data from your API
-        fetch("http://localhost:5000/blog/getblog")
+        fetch("https://localhost-000.onrender.com/blog/getblog")
             .then((response) => {
                 if (!response.ok) {
                     throw new Error("Network response was not ok");

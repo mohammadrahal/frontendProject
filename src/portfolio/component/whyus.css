@@ -38,7 +38,7 @@
 }
 
 .right-circle {
-    width: 400px;
+    width: 350px;
 }
 
 .right-why {
@@ -50,6 +50,8 @@
 
 .contenet-wyus {
     margin: 10px;
+    background: #f0efef;
+    padding: 10px;
 }
 
 @media (max-width:700px) {
@@ -68,5 +70,9 @@
 
     .right-why {
         margin-left: 0px;
+    }
+
+    .right-circle {
+        width: 250px;
     }
 }

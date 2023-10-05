@@ -2,7 +2,7 @@
 const postData = async (add) => {
     try {
 
-        const response = await fetch('http://localhost:5000/Experience/addExp', {
+        const response = await fetch('https://localhost-000.onrender.com/Experience/addExp', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -22,7 +22,7 @@ const postData = async (add) => {
 // update
 const updateData = async (id, updatedData) => {
     try {
-        const response = await fetch(`http://localhost:5000/Experience/updateExp/${id}`, {
+        const response = await fetch(`https://localhost-000.onrender.com/Experience/updateExp/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
@@ -42,7 +42,7 @@ const updateData = async (id, updatedData) => {
 
 const deleteData = async (_id) => {
     try {
-        const response = await fetch(`http://localhost:5000/Experience/delete/${_id}`, {
+        const response = await fetch(`https://localhost-000.onrender.com/Experience/delete/${_id}`, {
             method: 'DELETE',
         });
 

@@ -11,7 +11,7 @@ const ContactForm = () => {
 
     useEffect(() => {
         // Fetch labels, image URL, and other data from the API
-        fetch('http://localhost:5000/contactShape/getContactShape')
+        fetch('https://localhost-000.onrender.com/contactShape/getContactShape')
             .then(response => response.json())
             .then(data => {
                 if (data && data.data && data.data.length > 0) {

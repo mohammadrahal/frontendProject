@@ -10,7 +10,7 @@ const Footer1 = () => {
 
     useEffect(() => {
         // Fetch data from the API
-        fetch('http://localhost:5000/footer/getfooter')
+        fetch('https://localhost-000.onrender.com/footer/getfooter')
             .then((response) => response.json())
             .then((data) => {
                 // Set the fetched data to the state
@@ -63,7 +63,6 @@ const Footer1 = () => {
                         </a>
                     </div>
                 </div>
-                <div></div>
             </div>
         </div>
     );

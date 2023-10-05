@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
-// import "./index.css";
+import "./project.css"
 
 
 function Project() {
@@ -8,7 +8,7 @@ function Project() {
 
     useEffect(() => {
         // Fetch data from the API
-        fetch("http://localhost:5000/project/getproject")
+        fetch("https://localhost-000.onrender.com/project/getproject")
             .then((response) => response.json())
             .then((data) => {
                 // Assuming you want to display the first item in the array

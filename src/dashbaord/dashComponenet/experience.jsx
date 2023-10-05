@@ -4,7 +4,7 @@ import { postData, updateData, deleteData } from './expApi';
 
 const Experience = () => {
     const [data, setData] = useState([]);
-    const [api, setApi] = useState('http://localhost:5000/Experience/');
+    const [api, setApi] = useState('https://localhost-000.onrender.com/Experience/');
     const [newData, setNewData] = useState({
         title: '',
         firstblue: '',

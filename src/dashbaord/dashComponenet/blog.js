@@ -14,7 +14,7 @@ function Blogs() {
 
     useEffect(() => {
         // Fetch data from your API
-        fetch("http://localhost:5000/blog/getblog")
+        fetch("https://localhost-000.onrender.com/blog/getblog")
             .then((response) => {
                 if (!response.ok) {
                     throw new Error("Network response was not ok");
@@ -41,7 +41,7 @@ function Blogs() {
     const handleSaveClick = (blogId) => {
         // Send an API request to update the blog with the specified ID
         const updatedBlog = editedBlogContent;
-        fetch(`http://localhost:5000/blog/update/${blogId}`, {
+        fetch(`https://localhost-000.onrender.com/blog/update/${blogId}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
@@ -82,7 +82,7 @@ function Blogs() {
         formData.append('file', fileInput);
 
         try {
-            const response = await fetch('http://localhost:8000/upload', {
+            const response = await fetch('https://localhost-000.onrender.com/upload', {
                 method: 'POST',
                 body: formData,
             });
@@ -106,7 +106,7 @@ function Blogs() {
 
     const fetchUpdatedData = () => {
         // Fetch updated data from your API after an update
-        fetch("http://localhost:5000/blog/getblog")
+        fetch("https://localhost-000.onrender.com/blog/getblog")
             .then((response) => {
                 if (!response.ok) {
                     throw new Error("Network response was not ok");

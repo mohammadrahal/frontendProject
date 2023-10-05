@@ -19,11 +19,11 @@ function Ourservice() {
 
     useEffect(() => {
         // Fetch data from the API
-        fetch("http://localhost:5000/service/getservice")
+        fetch("https://localhost-000.onrender.com/service/getservice")
             .then((response) => response.json())
             .then((data) => {
                 // Assuming data structure is like {"data": [...]}
-                const firstService = data.data[0]; // Get the first service item
+                const firstService = data.data[0];
 
                 // Set the service data in state
                 setServiceData(firstService);
@@ -34,12 +34,12 @@ function Ourservice() {
     }, []);
 
     const handleEditClick = () => {
-        setEditMode(!editMode); // Toggle edit mode
+        setEditMode(!editMode);
     };
 
     const handleSaveClick = () => {
         // Send the edited data to the API
-        fetch(`http://localhost:5000/service/update/${serviceData._id}`, {
+        fetch(`https://localhost-000.onrender.com/service/update/${serviceData._id}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",
@@ -49,7 +49,7 @@ function Ourservice() {
             .then((response) => response.json())
             .then((data) => {
                 console.log("Data updated successfully:", data);
-                setEditMode(false); // Exit edit mode
+                setEditMode(false);
             })
             .catch((error) => {
                 console.error("Error updating data:", error);
@@ -58,7 +58,6 @@ function Ourservice() {
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
-        // Update the serviceData state with edited values
         setServiceData({
             ...serviceData,
             [name]: value,

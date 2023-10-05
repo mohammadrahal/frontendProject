@@ -13,7 +13,7 @@ const Header1 = () => {
 
     useEffect(() => {
         // Fetch the heading data from the API
-        fetch('http://localhost:5000/hero/gethero')
+        fetch('https://localhost-000.onrender.com/hero/gethero')
             .then((response) => response.json())
             .then((data) => {
                 if (data.success) {

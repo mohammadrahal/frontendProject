@@ -14,7 +14,7 @@ const ImageUploadForm = ({ setImageSrc, contactId }) => {
         formData.append('file', file);
 
         try {
-            const response = await fetch(`http://localhost:8000/upload`, {
+            const response = await fetch(`https://localhost-000.onrender.com/upload`, {
                 method: 'POST',
                 body: formData,
             });
@@ -27,7 +27,7 @@ const ImageUploadForm = ({ setImageSrc, contactId }) => {
                 setImageSrc(imageUrl);
 
                 // Update the image URL in the API using PUT method
-                await fetch(`http://localhost:5000/contactShape/update/${contactId}`, {
+                await fetch(`https://localhost-000.onrender.com/contactShape/update/${contactId}`, {
                     method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json',
@@ -74,7 +74,7 @@ const ContactForm = () => {
 
     useEffect(() => {
         // Fetch contact data including image source from the API
-        fetch('http://localhost:5000/contactShape/getContactShape')
+        fetch('https://localhost-000.onrender.com/contactShape/getContactShape')
             .then(response => response.json())
             .then(data => {
                 if (data && data.data && data.data.length > 0) {
@@ -100,7 +100,7 @@ const ContactForm = () => {
     const handleSaveClick = () => {
         // Send a PUT request to update the labels and image source in the API
         if (contactId) {
-            fetch(`http://localhost:5000/contactShape/update/${contactId}`, {
+            fetch(`https://localhost-000.onrender.com/contactShape/update/${contactId}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
@@ -131,7 +131,7 @@ const ContactForm = () => {
         };
 
         // Send a POST request to your API
-        fetch('http://localhost:5000/contact/postcontact', {
+        fetch('https://localhost-000.onrender.com/contact/postcontact', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

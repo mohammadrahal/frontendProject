@@ -8,7 +8,7 @@ const ContactList = () => {
     useEffect(() => {
         const fetchContactData = async () => {
             try {
-                const response = await fetch('http://localhost:5000/contact/getcontact');
+                const response = await fetch('https://localhost-000.onrender.com/contact/getcontact');
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
@@ -31,7 +31,7 @@ const ContactList = () => {
 
     const handleDeleteContact = async (id) => {
         try {
-            const response = await fetch(`http://localhost:5000/contact/delete/${id}`, {
+            const response = await fetch(`https://localhost-000.onrender.com/contact/delete/${id}`, {
                 method: 'DELETE',
             });
 

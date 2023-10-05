@@ -11,7 +11,7 @@ const WhyChooseUs = () => {
         // Fetch data from the server when the component mounts
         async function fetchData() {
             try {
-                const response = await fetch('http://localhost:5000/whyus/kel');
+                const response = await fetch('https://localhost-000.onrender.com/whyus/kel');
                 if (response.ok) {
                     const result = await response.json();
                     if (result.data && result.data.length > 0) {

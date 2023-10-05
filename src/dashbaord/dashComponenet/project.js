@@ -17,7 +17,7 @@ function Project() {
 
     useEffect(() => {
         // Fetch data from the API
-        fetch("http://localhost:5000/project/getproject")
+        fetch("https://localhost-000.onrender.com/project/getproject")
             .then((response) => response.json())
             .then((data) => {
                 if (data && data.data && data.data.length > 0) {
@@ -35,7 +35,7 @@ function Project() {
 
     const handleSaveClick = () => {
         // Perform the update to the API with the edited data
-        fetch(`http://localhost:5000/project/update/${projectData._id}`, {
+        fetch(`https://localhost-000.onrender.com/project/update/${projectData._id}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",
@@ -77,7 +77,7 @@ function Project() {
         formData.append("file", editedData.projectimage1);
 
         try {
-            const response = await fetch("http://localhost:8000/upload", {
+            const response = await fetch("https://localhost-000.onrender.com/upload", {
                 method: "POST",
                 body: formData,
             });
