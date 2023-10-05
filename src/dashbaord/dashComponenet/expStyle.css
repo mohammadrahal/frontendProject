@@ -1,0 +1,39 @@
+.exp-title {
+    color: #0000ff;
+    font-size: 2rem;
+}
+
+.container-exp {
+    display: flex;
+}
+
+.item_exp {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.item_list {
+    border: 1px solid;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 2px 4px 5px #ebe9e9;
+}
+
+.item_list:hover {
+    transform: translateY(4px);
+}
+
+.exp_edit {
+    margin-top: 20px;
+    display: flex;
+}
+
+.exp_btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
