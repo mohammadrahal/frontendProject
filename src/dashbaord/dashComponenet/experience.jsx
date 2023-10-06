@@ -47,17 +47,7 @@ const Experience = () => {
         });
     };
 
-    // const handleAddClick = () => {
-    //     postData(newData);
-    //     fetchData();
-    //     setNewData({
-    //         title: '',
-    //         firstblue: '',
-    //         secondblue: '',
-    //         firstblack: '',
-    //         secondblack: '',
-    //     });
-    // };
+   
     const handleEditClick = (_id) => {
         setIsEditing(true);
         setEditItemId(_id);
@@ -162,9 +152,7 @@ const Experience = () => {
                         onChange={handleInputChange}
                     />
                     </div>
-                    {/* {!isEditing && (
-                        <button onClick={handleAddClick}>Add</button>
-                    )} */}
+                 
                 </div>
             </div>
         </div>

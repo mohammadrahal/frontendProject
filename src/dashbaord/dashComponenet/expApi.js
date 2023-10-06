@@ -1,24 +1,3 @@
-// add
-const postData = async (add) => {
-    try {
-
-        const response = await fetch('https://localhost-000.onrender.com/Experience/addExp', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(add),
-        });
-
-        if (!response.ok) {
-            console.error('Failed to add data.');
-        }
-    } catch (error) {
-        console.error('Error adding data:', error);
-    }
-};
-
-
 // update
 const updateData = async (id, updatedData) => {
     try {
