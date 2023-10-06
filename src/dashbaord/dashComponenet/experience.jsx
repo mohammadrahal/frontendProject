@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../dashComponenet/expStyle.css';
-import { postData, updateData, deleteData } from './expApi';
+import {  updateData, deleteData } from './expApi';
 
 const Experience = () => {
     const [data, setData] = useState([]);
@@ -47,17 +47,17 @@ const Experience = () => {
         });
     };
 
-    const handleAddClick = () => {
-        postData(newData);
-        fetchData();
-        setNewData({
-            title: '',
-            firstblue: '',
-            secondblue: '',
-            firstblack: '',
-            secondblack: '',
-        });
-    };
+    // const handleAddClick = () => {
+    //     postData(newData);
+    //     fetchData();
+    //     setNewData({
+    //         title: '',
+    //         firstblue: '',
+    //         secondblue: '',
+    //         firstblack: '',
+    //         secondblack: '',
+    //     });
+    // };
     const handleEditClick = (_id) => {
         setIsEditing(true);
         setEditItemId(_id);
@@ -162,9 +162,9 @@ const Experience = () => {
                         onChange={handleInputChange}
                     />
                     </div>
-                    {!isEditing && (
+                    {/* {!isEditing && (
                         <button onClick={handleAddClick}>Add</button>
-                    )}
+                    )} */}
                 </div>
             </div>
         </div>
