@@ -59,4 +59,4 @@ const deleteData = async (_id) => {
 
 
 
-module.exports = { postData, updateData, deleteData };
+module.exports = { updateData, deleteData };

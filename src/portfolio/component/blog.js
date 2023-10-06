@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import './blog.css';
 
 function Blogs() {
