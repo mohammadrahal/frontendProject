@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import './header.css'; // Import your CSS files
+import './header.css';
 import './button1.css';
 import Footer1 from './Footer1';
 import logo from './assets/logoCrazy.jpg';

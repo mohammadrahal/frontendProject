@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './index.css';
-
+import './button.css';
 const App = () => {
     const [data, setData] = useState({});
     const [isEditing, setIsEditing] = useState(false);
@@ -166,56 +166,58 @@ const App = () => {
 
             <div className="content-why">
                 <div className="list-why">
-                    <div className="list-item">
-                        {isEditing ? (
-                            <>
-                                <input
-                                    type="text"
-                                    name="firsttick"
-                                    value={editedData.firsttick}
-                                    onChange={handleInputChange}
-                                />
-                            </>
-                        ) : (
-                            <>
-                                <img className='' src='' />
-                                <p>{data.firsttick}</p>
-                            </>
-                        )}
-                    </div>
-                    <div className="list-item">
-                        {isEditing ? (
-                            <>
-                                <input
-                                    type="text"
-                                    name="secondtick"
-                                    value={editedData.secondtick}
-                                    onChange={handleInputChange}
-                                />
-                            </>
-                        ) : (
-                            <>
-                                <img className='' src='' />
-                                <p>{data.secondtick}</p>
-                            </>
-                        )}
-                    </div>
-                    <div className="list-item">
-                        {isEditing ? (
-                            <>
-                                <input
-                                    type="text"
-                                    name="thirdtick"
-                                    value={editedData.thirdtick}
-                                    onChange={handleInputChange}
-                                />
-                            </>
-                        ) : (
-                            <>
-                                <img className='' src='' />
-                                <p>{data.thirdtick}</p>
-                            </>
-                        )}
+                    <div className='list-data'>
+                        <div className="list-item">
+                            {isEditing ? (
+                                <>
+                                    <input
+                                        type="text"
+                                        name="firsttick"
+                                        value={editedData.firsttick}
+                                        onChange={handleInputChange}
+                                    />
+                                </>
+                            ) : (
+                                <>
+                                    <img className='' src='' />
+                                    <p>{data.firsttick}</p>
+                                </>
+                            )}
+                        </div>
+                        <div className="list-item">
+                            {isEditing ? (
+                                <>
+                                    <input
+                                        type="text"
+                                        name="secondtick"
+                                        value={editedData.secondtick}
+                                        onChange={handleInputChange}
+                                    />
+                                </>
+                            ) : (
+                                <>
+                                    <img className='' src='' />
+                                    <p>{data.secondtick}</p>
+                                </>
+                            )}
+                        </div>
+                        <div className="list-item">
+                            {isEditing ? (
+                                <>
+                                    <input
+                                        type="text"
+                                        name="thirdtick"
+                                        value={editedData.thirdtick}
+                                        onChange={handleInputChange}
+                                    />
+                                </>
+                            ) : (
+                                <>
+                                    <img className='' src='' />
+                                    <p>{data.thirdtick}</p>
+                                </>
+                            )}
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-
+import './button.css';
 function Project() {
     const [projectData, setProjectData] = useState(null);
     const [editMode, setEditMode] = useState(false);

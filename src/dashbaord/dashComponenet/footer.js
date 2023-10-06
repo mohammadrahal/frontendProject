@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './footer1.css';
-
+import './button.css';
 const Footer1 = () => {
     const [footerData, setFooterData] = useState([]);
     const [editMode, setEditMode] = useState(false);
