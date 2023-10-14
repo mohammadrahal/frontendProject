@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../dashComponenet/expStyle.css";
-import { deleteData } from "./expApi";
-import { updateData } from "./expApi";
+import { updateData, deleteData } from "./expApi";
+
 const Experience = () => {
   const [data, setData] = useState([]);
   const [api, setApi] = useState(
