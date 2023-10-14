@@ -38,4 +38,4 @@ const deleteData = async (_id) => {
 
 
 
-module.exports = { updateData, deleteData };
+export default { updateData, deleteData };
