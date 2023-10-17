@@ -36,3 +36,9 @@
 .button1:hover::before {
     width: 250%;
 }
+
+@media (max-width:768px) {
+    .button1 {
+        letter-spacing: 0;
+    }
+}

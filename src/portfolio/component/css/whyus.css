@@ -1,0 +1,40 @@
+.whyus {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.text-content {
+    display: grid;
+    width: 60%;
+}
+
+.list-why {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 40rem;
+}
+
+.list-items-why {
+    display: flex;
+    align-items: center;
+}
+
+.title-whyus {
+    font-size: 2rem;
+}
+
+
+
+
+
+.right-why img {
+    width: 400px;
+}
+
+.list-items-why img {
+    width: 25px;
+}

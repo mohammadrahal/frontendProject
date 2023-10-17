@@ -160,7 +160,7 @@ const App = () => {
                         <p><img className='' src='' />{data.ssecondtick}</p>
                         <p><img className='' src='' />{data.sthirdtick}</p>
                     </div>
-                    <img style={{ width: '150px', height: '150px' }} src={data.image} alt="Image" />
+                    <img style={{ width: '150px', height: '150px' }} src={data.image} alt="" />
                 </div>
             )}
 
@@ -222,8 +222,9 @@ const App = () => {
                 </div>
             </div>
             <div style={{ display: 'flex' }}>
-                <button onClick={handleEditClick}>
+                <button onClick={handleEditClick} >
                     {isEditing ? 'Cancel' : 'Edit'}
+
                 </button>
                 {isEditing && (
                     <button onClick={handleSaveClick}>Save</button>

@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
-import "./header.css";
-import "./button1.css";
-import Footer1 from "./Footer1";
-import logo from "./assets/logoCrazy.jpg";
+import "../css/header.css";
+// import "../button1.css";
+
+import logo from "../assets/logoCrazy.jpg";
 
 const Header1 = () => {
-  const [navVisible, setNavVisible] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [headingData, setHeadingData] = useState({
     heading: "Welcome to",
     headingg: "Crazy Web UI",
@@ -29,16 +29,21 @@ const Header1 = () => {
       });
   }, []);
 
-  const toggleNav = () => {
-    setNavVisible(!navVisible);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
-    <header className='boxy'>
-      <div className='div1'>
-        <img className='imgz' src={logo} alt='Logo' />
-        <nav id='nav' className={`nav ${navVisible ? "show-nav" : ""}`}>
-          <a href="{Footer1} target='_blank'">Home</a>
+    <header>
+      <div className='header-container'>
+        <div>
+          <img className='header-logo' src={logo} alt='nav-Logo' />
+        </div>
+        <button onClick={toggleMenu} className='menu-btn'>
+          click
+        </button>
+        <nav className={`nav ${isMenuOpen ? "show-nav" : ""}`}>
+          <a href="#'">Home</a>
           <a href='#'>Services</a>
           <a href='#'>Why Choose us</a>
           <a href='#'>Skills</a>
@@ -48,11 +53,11 @@ const Header1 = () => {
       </div>
       <div id='polygon-image' className='heads'>
         <div className='flex-item'>
-          <h1>{headingData.heading}</h1>
-          <h2>{headingData.headingg}</h2>
-        </div>
-        <div className='flex-item'>
-          <button className='button1'>Let's be together</button>
+          <h1 className='h1-text'>{headingData.heading}</h1>
+          <h2 className='h2-text'>{headingData.headingg}</h2>
+          <div className=''>
+            <button className='button1'>Let's be together</button>
+          </div>
         </div>
       </div>
     </header>

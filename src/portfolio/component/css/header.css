@@ -1,0 +1,124 @@
+ /* CSS for header */
+
+
+ .flex-item {
+     color: #3CB0C9;
+     display: flex;
+     height: 100%;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+ }
+
+ .h1-text {
+     font-size: 2rem;
+ }
+
+ .h2-text {
+     font-size: 3.3rem;
+ }
+
+
+
+ .header-logo {
+     width: 50px;
+     margin-left: 60px;
+ }
+
+
+ #polygon-image {
+     background-image: url('../assets/HeroImage.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 70vh;
+     clip-path: polygon(0% 0%, 100% 0%, 100% 88%, 50% 100%, 0% 88%);
+ }
+
+ .header-container {
+     display: flex;
+     background-color: #333;
+     color: #fff;
+     width: 100%;
+     justify-content: space-between;
+ }
+
+
+ nav {
+     display: flex;
+     align-items: center;
+     margin-right: 10px;
+ }
+
+ nav a {
+     left: 20%;
+     display: block;
+     color: #fff;
+     text-decoration: none;
+     padding: 10px 20px;
+ }
+
+ nav a:hover {
+     color: grey;
+ }
+
+
+
+ .menu-btn {
+     display: none;
+ }
+
+ @media only screen and (max-width: 600px) {
+     .header-container {
+         align-items: center;
+         justify-content: space-between;
+     }
+
+
+
+     .menu-btn {
+         display: block;
+     }
+
+     .nav {
+         display: none;
+         background-color: #333333;
+         color: white;
+         position: absolute;
+         top: 60px;
+         right: 0;
+         flex-direction: column;
+         padding: 10px;
+         border: 1px solid white;
+         border-radius: 5px;
+         z-index: 1;
+         width: 60%;
+     }
+
+
+     .nav a {
+         text-decoration: none;
+         color: white;
+         margin: 5px 0;
+         transition: color 0.2s;
+     }
+
+
+     .nav a:hover {
+         color: #456ede;
+     }
+
+     .nav.show-nav {
+         display: flex;
+     }
+
+     .imgz {
+         display: block;
+         size: 2cm;
+         height: max-content;
+         margin-left: 10px;
+     }
+
+     #polygon-image {
+         height: 50vh;
+     }
+ }
