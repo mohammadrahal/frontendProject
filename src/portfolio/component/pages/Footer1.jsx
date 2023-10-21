@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "../css/Footer1.css";
-
+import Insta from "../assets/instagram.png";
+import Link from "../assets/linkedin.png";
+import Face from "../assets/facebook.png";
 const Footer1 = () => {
   const [footerData, setFooterData] = useState(null);
 
@@ -42,6 +44,14 @@ const Footer1 = () => {
               </p>
             </>
           )}
+        </div>
+        <div className='footer-social'>
+          <p className='social-media'> Social Media</p>
+          <div className='footer-icon'>
+            <img src={Insta} alt='' />
+            <img src={Face} alt='' />
+            <img src={Link} alt='' />
+          </div>
         </div>
       </div>
     </div>

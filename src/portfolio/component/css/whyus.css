@@ -7,15 +7,17 @@
 }
 
 .text-content {
-    display: grid;
-    width: 60%;
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .list-why {
-    display: grid;
+    display: flex;
+    gap: 38px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    width: 40rem;
+    align-items: center;
 }
 
 .list-items-why {
@@ -37,4 +39,30 @@
 
 .list-items-why img {
     width: 25px;
+}
+
+
+@media(max-width:762px) {
+    .whyus {
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    .text-content {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .contenet-wyus {
+        margin: auto;
+        width: 85%;
+    }
+
+
+    .right-why img {
+        display: none;
+    }
 }

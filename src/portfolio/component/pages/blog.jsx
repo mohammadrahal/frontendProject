@@ -46,7 +46,7 @@ function Blogs() {
                 <p>{blog.description}</p>
               </div>
               <div>
-                <p>{blog.imagedes}</p>
+                <p className='blog-im'>{blog.imagedes}</p>
               </div>
             </div>
           </div>

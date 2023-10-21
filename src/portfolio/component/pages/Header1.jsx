@@ -3,7 +3,7 @@ import "../css/header.css";
 // import "../button1.css";
 
 import logo from "../assets/logoCrazy.jpg";
-
+import menu from "../assets/menu.png";
 const Header1 = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [headingData, setHeadingData] = useState({
@@ -39,9 +39,8 @@ const Header1 = () => {
         <div>
           <img className='header-logo' src={logo} alt='nav-Logo' />
         </div>
-        <button onClick={toggleMenu} className='menu-btn'>
-          click
-        </button>
+        <img src={menu} onClick={toggleMenu} className='menu-btn' />
+
         <nav className={`nav ${isMenuOpen ? "show-nav" : ""}`}>
           <a href="#'">Home</a>
           <a href='#'>Services</a>
@@ -56,7 +55,7 @@ const Header1 = () => {
           <h1 className='h1-text'>{headingData.heading}</h1>
           <h2 className='h2-text'>{headingData.headingg}</h2>
           <div className=''>
-            <button className='button1'>Let's be together</button>
+            <button className='header-btn'>Let's be together</button>
           </div>
         </div>
       </div>

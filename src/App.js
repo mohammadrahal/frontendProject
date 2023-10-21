@@ -8,14 +8,14 @@ import {
 
 import Content from './dashbaord/Content';
 import LoginPage from './dashbaord/LoginPage';
-// import './index.css';
+
 
 import Header from './portfolio/component/pages/Header1';
 import Whyus from './portfolio/component/pages/whyus';
 import ContactUs from './portfolio/component/pages/contactus';
 import Blog from './portfolio/component/pages/blog';
 import Projects from './portfolio/component/pages/project';
-// import Service from './portfolio/component/pages/service';
+import Services from './portfolio/component/pages/Services';
 import Footer from './portfolio/component/pages/Footer1';
 import Experience from './portfolio/component/pages/experience';
 function App() {
@@ -24,7 +24,7 @@ function App() {
       <Router>
         <Routes>
           <Route path='/' element={<div> <Header />
-            {/* <Service /> */}
+            <Services />
             <Whyus />
             <Experience />
             <Blog />

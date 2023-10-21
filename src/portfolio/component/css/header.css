@@ -3,11 +3,12 @@
 
  .flex-item {
      color: #3CB0C9;
-     display: flex;
      height: 100%;
+     display: flex;
      align-items: center;
      justify-content: center;
      flex-direction: column;
+     gap: 1.5rem;
  }
 
  .h1-text {
@@ -50,15 +51,15 @@
  }
 
  nav a {
-     left: 20%;
-     display: block;
+
      color: #fff;
      text-decoration: none;
      padding: 10px 20px;
  }
 
  nav a:hover {
-     color: grey;
+     color: #c0c0c0;
+     text-decoration: underline;
  }
 
 
@@ -67,7 +68,19 @@
      display: none;
  }
 
- @media only screen and (max-width: 600px) {
+ .header-btn {
+     background: #3CB0C9;
+     padding: 20px 30px;
+     border-radius: 20px;
+     cursor: pointer;
+ }
+
+ .header-btn:hover {
+     background: #fff;
+     color: #3CB0C9;
+ }
+
+ @media only screen and (max-width: 800px) {
      .header-container {
          align-items: center;
          justify-content: space-between;
@@ -77,6 +90,9 @@
 
      .menu-btn {
          display: block;
+         width: 24px;
+         box-shadow: 3px 3px 15px 2px #686767;
+         margin-right: 40px;
      }
 
      .nav {
@@ -102,10 +118,6 @@
          transition: color 0.2s;
      }
 
-
-     .nav a:hover {
-         color: #456ede;
-     }
 
      .nav.show-nav {
          display: flex;

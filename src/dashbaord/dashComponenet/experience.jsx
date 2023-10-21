@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../dashComponenet/expStyle.css";
-import { updateData, deleteData } from "./expApi";
+// import { updateData, deleteData } from "./expApi";
 
 const Experience = () => {
   const [data, setData] = useState([]);
@@ -64,7 +64,7 @@ const Experience = () => {
     // console.log("update", _id);
     // console.log("editItemId:", editItemId);
     //     console.log("newData:", newData);
-    await updateData(editItemId, updatedDataWithoutId);
+    // await updateData(editItemId, updatedDataWithoutId);
     await fetchData();
 
     setIsEditing(false);
@@ -80,7 +80,7 @@ const Experience = () => {
 
   const handleDeleteClick = (id) => {
     // console.log(id)
-    deleteData(id);
+    // deleteData(id);
     fetchData();
   };
 

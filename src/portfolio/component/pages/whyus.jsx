@@ -3,6 +3,7 @@ import "../css/whyus.css";
 import Lamp from "../assets/lamp.png";
 import Bell from "../assets/bell.png";
 import Key from "../assets/key.png";
+import Image from "../assets/circle.jpg";
 const WhyChooseUs = () => {
   const [data, setData] = useState({});
   const [isLoading, setIsLoading] = useState(true);
@@ -38,34 +39,38 @@ const WhyChooseUs = () => {
           <p>{data.whyus}</p>
         </div>
         <div className='list-why'>
-          <div className='list-items-why'>
-            <img src={Lamp} alt='lamp-icon' />
-            <p>{data.firsttick}</p>
+          <div>
+            <div className='list-items-why'>
+              <img src={Lamp} alt='lamp-icon' />
+              <p>{data.firsttick}</p>
+            </div>
+            <div className='list-items-why'>
+              <img src={Bell} alt='bell-icon' />
+              <p>{data.secondtick}</p>
+            </div>
+            <div className='list-items-why'>
+              <img src={Key} alt='key-icon' />
+              <p>{data.thirdtick}</p>
+            </div>
           </div>
-          <div className='list-items-why'>
-            <img src={Bell} alt='bell-icon' />
-            <p>{data.secondtick}</p>
-          </div>
-          <div className='list-items-why'>
-            <img src={Key} alt='key-icon' />
-            <p>{data.thirdtick}</p>
-          </div>
-          <div className='list-items-why'>
-            <img src={Lamp} alt='lamp-icon' />
-            <p>{data.sfirsttick}</p>
-          </div>
-          <div className='list-items-why'>
-            <img src={Bell} alt='bell-icon' />
-            <p>{data.ssecondtick}</p>
-          </div>
-          <div className='list-items-why'>
-            <img src={Key} alt='key-icon' />
-            <p>{data.sthirdtick}</p>
+          <div>
+            <div className='list-items-why'>
+              <img src={Lamp} alt='lamp-icon' />
+              <p>{data.firsttick}</p>
+            </div>
+            <div className='list-items-why'>
+              <img src={Bell} alt='bell-icon' />
+              <p>{data.firsttick}</p>
+            </div>
+            <div className='list-items-why'>
+              <img src={Key} alt='key-icon' />
+              <p>{data.sthirdtick}</p>
+            </div>
           </div>
         </div>
       </div>
       <div className='right-why'>
-        <img className='right-pic' src={data.image} alt='Circle' />
+        <img className='right-pic' src={Image} alt='Circle' />
       </div>
     </div>
   );

@@ -14,7 +14,7 @@
 }
 
 .blog-image {
-    width: 350px;
+    width: 320px;
     padding: 5px;
     /* height: 50%; */
     border-radius: 32px;
@@ -26,6 +26,7 @@
     align-items: center;
     justify-content: center;
     gap: 50px;
+    margin: 6px;
 }
 
 .blog {
@@ -41,8 +42,30 @@
     left: 50px;
 }
 
-@media(max-width:700px) {
+.blog-im {
+    margin: 17px;
+}
+
+@media(max-width:800px) {
     .blog-images {
         flex-direction: column;
+        text-align: center;
     }
+
+    .blog {
+        left: 82px;
+    }
+
+    .blog-image {
+        width: 90%;
+    }
+
+    .blog-im {
+        margin: 9px;
+    }
+
+    .text {
+        gap: 28px;
+    }
+
 }

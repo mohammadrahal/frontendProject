@@ -31,15 +31,6 @@ function Project() {
           </a>
         </div>
       )}
-      {projectData && (
-        <a href={projectData.link1} target='_blank' rel='noopener noreferrer'>
-          <img
-            className='coffee'
-            src={projectData.projectimage1}
-            alt='coffe-image'
-          />
-        </a>
-      )}
       <div className='web'>
         <p>web developer</p>
       </div>
